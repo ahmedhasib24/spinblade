@@ -1,0 +1,532 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1393005272420752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4288288556371088}
+  - component: {fileID: 114800789037522962}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4288288556371088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393005272420752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4258974769526350}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114800789037522962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393005272420752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc99c03c1f2efd04580c5e9a89ed5ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMessage: {fileID: 0}
+  menuUiController: {fileID: 0}
+  allBlades: []
+  basicBlades:
+  - id: 0
+    iconId: 0
+    name: Viper V1
+    attackRing:
+      id: 0
+      attack: 60
+    weightDisk:
+      id: 0
+      defense: 65
+    baseRing:
+      id: 0
+      stamina: 70
+    level: 0
+    initialEnergy: 40
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 0
+    price: 2000
+  - id: 1
+    iconId: 1
+    name: Viper V2
+    attackRing:
+      id: 1
+      attack: 65
+    weightDisk:
+      id: 1
+      defense: 70
+    baseRing:
+      id: 1
+      stamina: 75
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 0
+    price: 2500
+  - id: 2
+    iconId: 2
+    name: Viper V3
+    attackRing:
+      id: 2
+      attack: 70
+    weightDisk:
+      id: 2
+      defense: 75
+    baseRing:
+      id: 2
+      stamina: 80
+    level: 0
+    initialEnergy: 60
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 3000
+  - id: 3
+    iconId: 3
+    name: Bear V1
+    attackRing:
+      id: 3
+      attack: 75
+    weightDisk:
+      id: 3
+      defense: 80
+    baseRing:
+      id: 3
+      stamina: 85
+    level: 0
+    initialEnergy: 60
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 3200
+  - id: 4
+    iconId: 4
+    name: Bear V2
+    attackRing:
+      id: 4
+      attack: 75
+    weightDisk:
+      id: 4
+      defense: 80
+    baseRing:
+      id: 4
+      stamina: 85
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 3500
+  - id: 5
+    iconId: 5
+    name: Bear V3
+    attackRing:
+      id: 5
+      attack: 85
+    weightDisk:
+      id: 5
+      defense: 80
+    baseRing:
+      id: 5
+      stamina: 75
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 4000
+  - id: 6
+    iconId: 6
+    name: Lion V1
+    attackRing:
+      id: 6
+      attack: 80
+    weightDisk:
+      id: 6
+      defense: 75
+    baseRing:
+      id: 6
+      stamina: 70
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 4500
+  - id: 7
+    iconId: 7
+    name: Lion V2
+    attackRing:
+      id: 7
+      attack: 75
+    weightDisk:
+      id: 7
+      defense: 70
+    baseRing:
+      id: 7
+      stamina: 65
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 7000
+  - id: 8
+    iconId: 8
+    name: Lion V3
+    attackRing:
+      id: 8
+      attack: 70
+    weightDisk:
+      id: 8
+      defense: 65
+    baseRing:
+      id: 8
+      stamina: 60
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 7500
+  - id: 9
+    iconId: 9
+    name: Tiger V1
+    attackRing:
+      id: 9
+      attack: 90
+    weightDisk:
+      id: 9
+      defense: 90
+    baseRing:
+      id: 9
+      stamina: 85
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 8000
+  - id: 9
+    iconId: 9
+    name: Tiger V2
+    attackRing:
+      id: 10
+      attack: 80
+    weightDisk:
+      id: 10
+      defense: 85
+    baseRing:
+      id: 10
+      stamina: 85
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 9000
+  - id: 9
+    iconId: 9
+    name: Tiger V1
+    attackRing:
+      id: 11
+      attack: 90
+    weightDisk:
+      id: 11
+      defense: 90
+    baseRing:
+      id: 11
+      stamina: 90
+    level: 0
+    initialEnergy: 50
+    energyRefillTime: 10
+    skillCost: 30
+    attackCost: 50
+    defenseCost: 60
+    locked: 1
+    price: 10000
+  tournamentBlades: []
+  attackRings:
+  - id: 0
+    attack: 60
+  - id: 1
+    attack: 65
+  - id: 2
+    attack: 70
+  - id: 3
+    attack: 75
+  - id: 4
+    attack: 80
+  - id: 5
+    attack: 90
+  - id: 6
+    attack: 75
+  - id: 7
+    attack: 70
+  - id: 8
+    attack: 65
+  - id: 9
+    attack: 60
+  - id: 9
+    attack: 80
+  - id: 9
+    attack: 90
+  weightDisks:
+  - id: 0
+    defense: 60
+  - id: 1
+    defense: 65
+  - id: 2
+    defense: 70
+  - id: 3
+    defense: 75
+  - id: 4
+    defense: 80
+  - id: 5
+    defense: 85
+  - id: 6
+    defense: 90
+  - id: 7
+    defense: 80
+  - id: 8
+    defense: 70
+  - id: 9
+    defense: 60
+  - id: 9
+    defense: 85
+  - id: 9
+    defense: 90
+  baseRings:
+  - id: 0
+    stamina: 60
+  - id: 1
+    stamina: 70
+  - id: 2
+    stamina: 75
+  - id: 3
+    stamina: 80
+  - id: 4
+    stamina: 85
+  - id: 5
+    stamina: 90
+  - id: 6
+    stamina: 80
+  - id: 7
+    stamina: 70
+  - id: 8
+    stamina: 60
+  - id: 9
+    stamina: 65
+  - id: 9
+    stamina: 85
+  - id: 9
+    stamina: 90
+  workshopAttackRings: []
+  workshopWeightDisks: []
+  workshopBaseRings: []
+  stadiums:
+  - id: 0
+    name: Madness
+    price: 4000
+  - id: 1
+    name: Slavation
+    price: 4500
+  - id: 2
+    name: Blade First
+    price: 5000
+  - id: 3
+    name: Blade Funy
+    price: 5500
+  - id: 4
+    name: Phantom
+    price: 6000
+  customBlades: []
+  gameMode: 0
+  isTournamentEnabled: 0
+  tournamentRound: 0
+  eliminatedIds: 
+--- !u!1 &1604561541821012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4258974769526350}
+  - component: {fileID: 114768767833749058}
+  - component: {fileID: 82406906804779824}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4258974769526350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604561541821012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288288556371088}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114768767833749058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604561541821012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06ae2f4bbc3f2e40884f86a2471a167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 8300000, guid: fed22af3f1d86da499e400dfcf562e22, type: 3}
+  button: {fileID: 8300000, guid: 2727ffdad74539e4f9a62b4e711b2e8c, type: 3}
+--- !u!82 &82406906804779824
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604561541821012}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fed22af3f1d86da499e400dfcf562e22, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
